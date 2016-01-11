@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Clickbait vs. You</h1>
+					<h3>GA DAT-10 Project Presentation</h3>
+					<p>
+						<small>By <a href="mailto:denn.yau@gmail.com">Dennis Yau</a></small>
+					</p>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+                    <section>
+                        <h2>Article Accuracy</h2>
+                        <h4>compared to</h4>
+                        <h2>Link Title</h2>
+                        <p>
+                            Is there a way to predict if an online article is clickbait based on structure and use of the title?
+                        </p>
+                    </section>
+					<section>
+                        <p>
+                            Learning to sift through the deluge of information in the modern world is rapidly becoming a required skill and determining truth in phrasing is important in both artifical intelligence as well as maximizing a person's precious time.
+                        </p>
+					</section>
+				</section>
+
+                <section>
+                    <h2>
+                        Theories
+                    </h2>
+                    <ol>
+                        <li>
+                            There is a particular pattern used to mask clickbat - this implies that we as humans have a pre-desposition to certain communication patterns.
+                        </li>
+                        <li>
+                            If article sources can be assigned a co-efficient, implying that we can rank article sources by "trustworthiness"
+                        </li>
+                        <li>
+                            Which cognitive distortions/logical fallicies are most exploited in the creation of clickbait.
+                        </li>
+                    </ol>
+                </section>
+<!--
+				<section data-markdown>
+					<script type="text/template">
+						## Markdown support
+
+						Write content using inline or external Markdown.
+						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+
+						```
+						<section data-markdown>
+						  ## Markdown support
+
+						  Write content using inline or external Markdown.
+						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+						</section>
+						```
+					</script>
+				</section>
+-->
+                <section>
+                    <section>
+                        <h2>Data Requirements</h2>
+                        <p>We need ...</p>
+                        <ol>
+                            <li class="fragment">
+                                Truth Control
+                            </li>
+                            <li class="fragment">
+                                Liar Control
+                            </li>
+                            <li class="fragment">
+                                Variables
+                            </li>
+                        </ol>
+                    </section>
+                    <section>
+                        <h3>Truth Control</h3>
+                        <p>
+                            Sources that are considered to be telling the truth
+                        </p>
+                        <blockquote>
+                        <ul>
+                            <li>
+                                The New York Times
+                            </li>
+                            <li>
+                                US Gov. Open Climate Data
+                            </li>
+                            <li>
+                                Wikipedia Page Traffic Statistics
+                            </li>
+                            <li>
+                                Reddit's Not The Onion Subreddit
+                            </li>
+                        </ul>
+                        </blockquote>
+                    </section>
+                    <section>
+                        <h3>Liar Control</h3>
+                        <p>
+                            Sources that are considered to be representing the truth
+                        </p>
+                        <blockquote>
+                        <ul>
+                            <li>
+                                The Onion
+                            </li>
+                            <li>
+                                Reddit's Fake News Subreddit
+                            </li>
+                            <li>
+                                The Daily Currant
+                            </li>
+                            <li>
+                                The National Report 
+                            </li>
+                        </ul>
+                        </blockquote>
+                    </section>
+                    <section>
+                        <h3>Variables</h3>
+                        <p>
+                            Sources to compare and attempt to predict
+                        </p>
+                        <blockquote>
+                        <ul>
+                            <li>
+                                Mashable
+                            </li>
+                            <li>
+                                UpWorthy
+                            </li>
+                            <li>
+                                Vox
+                            </li>
+                            <li>
+                                BBC
+                            </li>
+                        </ul>
+                        </blockquote>
+                    </section>
+                </section>
+
+
+                <section>
+                    <h2>Prediction Data Features</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Idea</th>
+								<th>Numeric Represenation</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Text Patterns</td>
+								<td>Dummy Values</td>
+							</tr>
+							<tr>
+								<td>Word/Character Count</td>
+								<td>already number</td>
+							</tr>
+							<tr>
+								<td>Word/Character Ratio</td>
+								<td>already number</td>
+							</tr>
+							<tr>
+								<td>Specific Keywords</td>
+								<td>??</td>
+							</tr>
+                            <tr>
+                                <td>Grammer</td>
+                                <td>??</td>
+                            </tr>
+                            <tr>
+                                <td>Title Words in Article</td>
+                                <td>already number</td>
+                            </tr>
+						</tbody>
+					</table>
+                </section>
+
+
+				<section style="text-align: left;">
+					<h1>Thank You</h1>
+					<p>
+						- <a href="https://github.com/dennyau/dc-dat-10-work">My Class Repo</a> <br>
+					</p>
+					<p style="display: none">
+						- <a href="https://github.com/hakimel/reveal.js">Reveal.js presentation framework</a>
+					</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script>
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
